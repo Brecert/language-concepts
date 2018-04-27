@@ -230,7 +230,13 @@ TIMER(1s)
 # It loops forever since there is no end.
 # Basic program
 # Just logic gates put on here.
+```
 
+| ! | > | v                    |   |   |
+|---|---|----------------------|---|---|
+| ^ |   | PUTS("Hello World!") |   |   |
+| ^ |   | <                    |   |   |
+|   |   |                      |   |   |
 
        
 
