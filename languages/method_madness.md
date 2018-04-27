@@ -44,12 +44,16 @@ end
 
 With that code a string would be instanced with `"(code)` and ended with the `."` method
 
+
 This is what I mean by everything is a method, nothing is handled directly by the interpreter.
 It would be extremely slow, but would allow for some amazing metaprogramming.
+
 
 You could redefine the entire language inside of itself if you wanted to...
 
 Instead of instancing string with `"` to start and end it why not `Begin Sentence\s` and `\sEnd of Sentence` so it would be `Begin Sentence Hello World! End of Sentence`
+
+
 
 The base language itself would have nothing in it other then the parser and basic interpreter for all of this.
 
