@@ -80,6 +80,8 @@ _In this case by doing ~.to_s and calling the last class (say), it returns (say)
 
 _Do is not needed because it already yeilds, but do can be used_
 
+By doing all of this, say can do many things in a simple way.
+Say can recieve direct input `say(Hi!)`, and say can recieve objects, `say(Object)` (including strings)
 
 while(true)
   say(hi)
