@@ -87,4 +87,42 @@ while(true)
   say(hi)
 end
 
+say Hello! if username is not Brecert
+
+say(Hello!).if(username).is(not(Brecert))
+
+echo Hello
+echo(Hello)
+
+In shell everything is typically a string unless otherwise specified.
+In other languages, everything is a token/object unless otherwise specified.
+
+How would I mix them in a fast, readable format.
+Perhaps a mix of both where you change modes.
+
+```cr
+`use code`
+def say(string : String)
+  puts string
+end
+
+local string world = "World"
+
+`use text`
+say Hello!
+```
+Using the variables are confuing, perhaps there could be different insertion modes.
+```cr
+`use crystal text`
+say Hello #{world}!
+# or
+`use shell text`
+say Hello %world%
+# or
+`use javascript text`
+say Hello ${world}
+# or
+`use custom '{{' '}}'
+say hello {{world}}
+
 
