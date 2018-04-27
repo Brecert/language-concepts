@@ -12,7 +12,7 @@ In ruby templates are handled like this, by the interpreter.
 `"1 + 1 = #{1 + 1}"`
 
 In this it works the same but like this.
-`"(1 + 1 = #{.(1 + 1).})."
+`"(1 + 1 = #{.(1 + 1).})."`
 
 You may be wondering about the ." or .}
 It's the same as an `end` in ruby, but again, it's a method, and because it's a method, it can be redefined and renamed.
