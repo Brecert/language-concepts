@@ -42,5 +42,6 @@ class String
 end
 ```
 
+With that code a string would be instanced with `"(code)` and ended with the `."` method
 
-# ignore this for now | while(true).do(yield).end
+_ignore this for now | while(true).do(yield).end_
