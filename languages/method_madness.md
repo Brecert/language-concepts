@@ -51,7 +51,11 @@ You could redefine the entire language inside of itself if you wanted to...
 
 Instead of instancing string with `"` to start and end it why not `Begin Sentence\s` and `\sEnd of Sentence` so it would be `Begin Sentence Hello World! End of Sentence`
 
-
+The base language itself would have nothing in it other then the parser and basic interpreter for all of this.
+However standard definitions like `def` and things like that wouldn't actually be defined inside of the interpreter.
+It would be specially defined separately in a language/definitions library, presumably coded with bindings to C or LLVM.
+This way the langauge could be styled however you wanted.
+Python syntax (not whitespace though) or Ruby, maybe C or JS, just change the names of begin and end for most things.
 
 
 _ignore this for now | while(true).do(yield).end_
