@@ -17,7 +17,7 @@ In this it works the same but like this.
 You may be wondering about the ." or .}
 It's the same as an `end` in ruby, but again, it's a method, and because it's a method, it can be redefined and renamed.
 
-The source of a really basic string might look like this.
+The source of a really basic way of making strings might look like this.
 
 ```rb
 class Do
@@ -41,5 +41,6 @@ class String
   end
 end
 ```
+
 
 # ignore this for now | while(true).do(yield).end
