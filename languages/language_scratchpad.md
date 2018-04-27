@@ -1,3 +1,4 @@
+```rb
 puts | say | log
 print | whisper
 
@@ -40,3 +41,4 @@ _Do is not needed because it already yeilds, but do can be used_
 while(true)
   say(hi)
 end
+```
