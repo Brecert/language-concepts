@@ -122,7 +122,43 @@ say Hello %world%
 `use javascript text`
 say Hello ${world}
 # or
-`use custom '{{' '}}'
+`use custom '{{' '}}'`
 say hello {{world}}
+```
+
+What if you could define the syntax of a function, so that you could do special things with it.
+
+```cr
+ignoring interpreter define say(text : Raw(
+  ending: '...', '.', '?!', '!?', '?', '!'
+)) do
+  puts text.to_s().remove_commas().template(begin: '#{', end: '}')
+end
+
+
+# The language needs to trust you that this works.
+# Lots of sharp edges.
+
+say(Hello World!)
+# => "Hello World"
+
+say(Hi)
+# => Error Expected ..., ., ?!, !?, ?, or !
+
+# Doesn't work with objects because it just takes raw input, no handling.
+# It's also expecting it to end with a specific ending, objects tend not to do that.
+# The ending needs to happen, even if it's `\n` or similar, unless you have a decent lex/parse/interp
+say(object)
+# => Error Expected ..., ., ?!, !?, ?, or !
+
+say(I, don't, like, commas...)
+# => "I don't like commas..."
+
+string public ≠ = "do not"
+say(I, really, #{≠} like, commas)
+# => "I really do not like commas"
+# Works because of .template that happens after the raw text is entered.
+# A this is meant to show how powerful it is.
+# Even though its a very sharp edge.
 
 
