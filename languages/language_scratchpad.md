@@ -212,3 +212,26 @@ wire >> SAY("Hello World!")
 # => "Hello World!"
 ```
 
+```cr
+# Example
+
+
+NOT >> WIRE >> SAY("Hello World!")
+ ^      V
+ ^      V
+TIMER(1s)
+
+# Not by default is turned on. (because it reverses), like how !false == true
+# Not outputs to the wire/node, the wire/node outputs into the timer
+# The timer counts up to 1s when it recieves input
+# When the timer reaches 1s it sends a truthy to NOT ans NOT powers off.
+# Assuming the timer resets when it's full, NOT just flickers off for a moment before turning on.
+# When it turns on again it activate SAY
+# It loops forever since there is no end.
+# Basic program
+# Just logic gates put on here.
+
+
+       
+
+
