@@ -160,5 +160,53 @@ say(I, really, #{≠} like, commas)
 # Works because of .template that happens after the raw text is entered.
 # A this is meant to show how powerful it is.
 # Even though its a very sharp edge.
+```
 
+------
+
+```cr
+# From
+put("Hello world").in(the(STD::Out))
+# To
+put "Hello world in the STD::Out
+# To
+put "Hello World" in the Standard::Out
+```
+
+```cr
+public string "String" << ~
+print string
+# Never happens, string inserts into itself forever.
+```
+
+```cr
+# Gate based programming (already a thing but forgot name)
+
+# NOT
+# AND
+# OR
+# NAND
+# NOR
+# XOR
+# XNOR
+
+# TIMER / CLOCK
+
+local undefined wire
+
+wire >> NOT >> TIMER(ms) >> wire
+wire >> SAY("Hello World!")
+```
+basically
+```cr
+# wire goes into not
+wire >> NOT
+# not goes into a timer
+NOT >> TIMER(1s)
+# timer counts up to 1 and goes back into wire
+TIMER(1s) >> wire
+# loop happens
+```
+
+wire >> SAY("Hello World!")
 
