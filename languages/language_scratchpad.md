@@ -206,7 +206,9 @@ NOT >> TIMER(1s)
 # timer counts up to 1 and goes back into wire
 TIMER(1s) >> wire
 # loop happens
-```
 
+# When wire is activated, say hello world!
 wire >> SAY("Hello World!")
+# => "Hello World!"
+```
 
