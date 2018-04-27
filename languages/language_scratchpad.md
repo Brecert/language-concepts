@@ -32,7 +32,11 @@ class While < Loop
   end
 end
 
+method(say)
+  "{{say ~if(~.object?).&(not(~.nil)).do(~.to_s) }}"
+end
+
 _Do is not needed because it already yeilds, but do can be used_
 while(true)
-  
+  say(hi)
 end
