@@ -37,7 +37,7 @@ class String
 
   # Obviously have some way for the interpreter to know that " is the name, but ignore all of that right now.
   def " (**args)
-    yield self.do(args)
+    new String(yield self.do(args))
   end
 end
 ```
