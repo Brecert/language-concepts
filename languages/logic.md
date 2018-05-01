@@ -92,3 +92,46 @@ Icon, Position?
 }
 ```
 
+```cr
+NOT:
+  name: "Not Gate"
+  icon: "not.png"
+  desc: "Reverses input"
+  inputs:
+    0: "input"
+  outputs:
+    0: "output"
+  actions:
+    outputs:
+      0: reverse(inputs[0])
+      
+AND:
+  name: "And Gate"
+  icon: "and.png"
+  desc: "Activated when both inputs are active."
+  inputs:
+    0..1(i): "input #{i}"
+  outputs:
+    0: "output"
+  actions:
+    outputs:
+      0: if(inputs.uniq.size === 1).to_perc
+      
+COUNTER:
+  name: "Counter"
+  icon: "counter?"
+  desc: "Count up until active"
+  inputs:
+    0: "Count up"
+    1: "Reset"
+  outputs:
+    0: "Output"
+  actions
+    properties:
+      counter: 0
+      max: 10
+      min: 0
+    inputs:
+      0: counter += 1
+      1: counter = min
+    
