@@ -239,5 +239,12 @@ TIMER(1s)
 |   |   |                      |   |   |
 
        
-
-
+Have a language thing where you define different parts of it through normal definitions.
+```cr
+def "
+  until "
+    str << char
+  end
+  str
+end
+```
