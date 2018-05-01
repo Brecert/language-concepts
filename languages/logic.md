@@ -66,5 +66,29 @@ Icon, Position?
 }
 ```
 
-
+```cr
+{
+  name: "Not Gate"
+  icon: "not.png"
+  desc: "Reverses input"
+  # --- #
+  inputs: {
+    amount: 1
+    names {
+      0: "input"
+    }
+  }
+  outputs: {
+    amount: 1
+    names {
+      0: "output"
+    }
+  }
+  action: {
+    outputs: {
+      0: reverse(inputs[0])
+    }
+  }
+}
+```
 
