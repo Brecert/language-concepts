@@ -58,6 +58,13 @@ Visual aspects include.
 
 Icon, Position?
 
+```cr
+{
+  name: "Not Gate"
+  icon: "not.png"
+  desc: "Reverse input"
+}
+```
 
 
 
