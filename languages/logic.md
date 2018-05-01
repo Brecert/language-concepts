@@ -1,6 +1,10 @@
 ```cr
-true = 100
-false = 0
+MAX   = 1.0
+MID   = 0.0
+MIN   = -1.0
+
+TRUE  = MAX
+FALSE = MID
 
 Node
   inputs  : Int
