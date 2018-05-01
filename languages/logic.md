@@ -135,4 +135,6 @@ COUNTER:
     inputs:
       0: counter += 1
       1: counter = min
+    outputs:
+      0: (counter / max)
     
