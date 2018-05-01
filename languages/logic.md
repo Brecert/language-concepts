@@ -1,5 +1,5 @@
 ```cr
-true = 1000
+true = 100
 false = 0
 
 Node
