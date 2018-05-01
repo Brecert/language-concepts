@@ -119,7 +119,8 @@ AND:
       
 COUNTER:
   name: "Counter"
-  icon: "counter?"
+  icon:
+    fill(counter / max, #fff)
   desc: "Count up until active"
   inputs:
     0: "Count up"
