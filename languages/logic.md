@@ -1,7 +1,14 @@
 ```cr
+true = 1000
+false = 0
+
 Node
   inputs  : Int
   outputs : Int
+  
+  def run
+    return input
+  end
 end
   
 Not < Node
@@ -16,4 +23,30 @@ Not < Node
     end
   end
 end
+
+And < Node
+  inputs : 2
+  outputs : 1
   
+  properties = {
+    inputs: {
+      default: 2
+      min: 2
+      max: 100
+    }
+  }
+  
+  inputs.each do |input|
+    input.name = ""
+  end
+  
+  def run
+    if all the inputs are the same
+      output.value = true
+    else
+      output.value = false
+    end
+  end
+end
+
+
