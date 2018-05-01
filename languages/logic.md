@@ -48,5 +48,12 @@ And < Node
     end
   end
 end
+```
+Nodes are non-visual. To display they are extended with visual aspects.
+Visual aspects include.
+
+Icon, Position?
+
+
 
 
