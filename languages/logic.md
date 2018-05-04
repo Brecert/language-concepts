@@ -147,7 +147,9 @@ https://i.imgur.com/MfN4sgq.png
 
 3 Layers
 > Node | Attatchment
+
 > Value
+
 > Display
 
 Node | Attatchment stores What nodes are places and what they are outputting/inputting to.
