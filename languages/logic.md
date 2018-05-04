@@ -147,11 +147,15 @@ https://i.imgur.com/MfN4sgq.png
 
 3 Layers
 Node | Attatchment
+
 Value
+
 Display
 
 Node | Attatchment stores What nodes are places and what they are outputting/inputting to.
+
 Value stores all the values for temporary values in certain wires.
+
 Display stores all display positions (x, y, color, etc..)
 
 
