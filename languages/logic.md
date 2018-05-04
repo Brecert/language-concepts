@@ -137,7 +137,8 @@ COUNTER:
       1: counter = min
     outputs:
       0: (counter / max)
-    
+```
+
 ```cr
 NOT > SAY("Hello World!")
 # => "Hello World!"
