@@ -173,5 +173,14 @@ This allows for more specific execution and easy for the interpreter to read and
 
 
 
-      
+process
+```cr
+Create Node
+Node has last ID += 1
 
+Every Tick (20tps)
+  Select node based on ID
+    Read Input, do Action
+  end
+end
+```
