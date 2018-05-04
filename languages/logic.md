@@ -166,6 +166,11 @@ every tick
 ``` 
 This wont work because it relies on both.
 
+Instead assign a numeric id to each node
+Execute based on node id amount
+
+This allows for more specific execution and easy for the interpreter to read and create.
+
 
 
       
