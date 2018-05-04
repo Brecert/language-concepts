@@ -140,7 +140,7 @@ COUNTER:
 ```
 
 ```cr
-NOT > SAY("Hello World!")
+NOT >> SAY("Hello World!")
 # => "Hello World!"
 ```
 https://i.imgur.com/MfN4sgq.png
