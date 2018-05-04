@@ -158,5 +158,15 @@ Value stores all the values for temporary values in certain wires.
 
 Display stores all display positions (x, y, color, etc..)
 
+```cr
+every tick
+  if current node is connected
+    walk to connected with output
+      connected input = output
+``` 
+This wont work because it relies on both.
 
+
+
+      
 
