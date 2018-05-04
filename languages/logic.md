@@ -138,3 +138,13 @@ COUNTER:
     outputs:
       0: (counter / max)
     
+```cr
+NOT > SAY("Hello World!")
+# => "Hello World!"
+```
+https://i.imgur.com/MfN4sgq.png
+
+I can't think of how it would worka
+
+
+
