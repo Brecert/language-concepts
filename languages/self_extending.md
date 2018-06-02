@@ -14,8 +14,7 @@ Div, nav, a are not defined.
 The methods, .name, .bar, are not defined
 The argument, src is not defined.
 
-So how would this work?
-I'll get to this in a moment
+So how would this all work?
 
 The idea of the language is that the Language Syntax adapts to you.
 You do not adapt to the language.
