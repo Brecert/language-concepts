@@ -2,14 +2,13 @@
 # Functions are like
 f(x) = x
 # The design of it being like math is intentional
-# Language is supposed to be easy to learn.
-
+# Language is supposed to be easy to learn
+```
 
 ```
 start
 f(amount) = (amount * pi) / 360
 end
-```
 ```
 translated 
 ```
