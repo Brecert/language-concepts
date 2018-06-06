@@ -5,23 +5,30 @@ f(x) = x
 # Language is supposed to be easy to learn
 ```
 
+Natural English
+```
+f of x equals x
+```
+
+Natural Latin
+```
+f ex x par x
+```
+
 ```
 start
-f(amount) = (amount * pi) / 360
+circle(amount) = (amount * PI) / 360
 end
 ```
 translated 
 ```
 start
-parenthese mana times pi parenthese divide three hundred sixty
+circle of amount equals paren amount * PI paren / ThreeHundredSixty
 end
 ```
 Fully translated it would be
 ```
 initium
-par en mana temporibus pi par en divsus CCCLX
+circle ex amount par quae temporibus PI quae divisio CCCLX
 terminus
-```
-
-
 ```
