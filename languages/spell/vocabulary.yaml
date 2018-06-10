@@ -1,5 +1,14 @@
-phantasmagoria : [extreme]
-particula      : [particle]
-ignis          : [fire, heat]
-inferno        : [strong] [fire, heat]
-aqua           : [water]
+adjective:
+  strength:
+    phantasmagoria : [extreme]
+  size:
+    particula      : [particle]
+
+types:
+  heat:
+    ignis   : [fire, heat]
+    inferno : [strong] [fire, heat]
+  water:
+    aqua : [water]
+    
+    
