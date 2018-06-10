@@ -3,9 +3,14 @@ Initial.
 if(block(redstone_block).position(below: 1).has?) then
   announce("Hello World")
 ```
-Translated.
+Translated to natural english. Optionals in \[], Default arguments that aren't used are in \[()]
 ```
-if block is redstone_block position below 1 is true then announce "Hello World"
+if block [is] [a] redstone_block position[ed] below [(self)] 1 [is true] then announce "Hello World"
+```
+
+Without any optionals
+```
+if block redstone_block position below 1 then announce "Hello World!"
 ```
 
 Translated.
