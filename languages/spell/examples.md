@@ -3,6 +3,10 @@ Initial.
 if(block(redstone_block).position(below: 1).has?) then
   announce("Hello World!")
 ```
+Translated.
+```
+if block is redstone_block position below 1 is true then announce "Hello World"
+```
 
 Translated.
 ```spell
