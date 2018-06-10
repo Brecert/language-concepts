@@ -1,0 +1,5 @@
+phantasmagoria : [extreme]
+particula      : [particle]
+ignis          : [fire, heat]
+inferno        : [strong] [fire, heat]
+aqua           : [water]
