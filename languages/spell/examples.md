@@ -1,7 +1,7 @@
 Initial.
 ```
 if(block(redstone_block).position(below: 1).has?) then
-  announce("Hello World!")
+  announce("Hello World")
 ```
 Translated.
 ```
