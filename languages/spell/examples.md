@@ -8,7 +8,7 @@ Translated.
 ```spell
 si objectum redstone_block et lego statum sub I et magis tum nuntiare "Hello World"
 ```
-```crystal
+```yaml
 if       : si
 objectum : block|object
 et       : .|is|has
