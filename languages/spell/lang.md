@@ -16,3 +16,9 @@ otherwise
   say there is no redstone block at '''pos(0, 100, 0)'''
 end if
 ```
+```
+if
+redstone_block: block variable
+exists: method
+in: (not at) check inside of the block, if there is a block.
+```
