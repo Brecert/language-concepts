@@ -5,7 +5,7 @@ add(2, 2)
 ```
 
 ```
-addio unus et duo par unus additio duo
-addio II, II
+addius argis et argos par argis additio argos
+addius duo et duo
 # => IV
 ```
