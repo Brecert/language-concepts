@@ -30,6 +30,21 @@ magis    : ?|!!|truer|bool
 tum      : then
 nuntiare : announce
 ```
+___
 
-
+```
+when "hello" is said then reply with "Hello world!"
+```
+```
+when "hello" said reply "Hello World!"
+```
+```
+when(said, "Hello") { reply("Hello World") }
+```
+```
+event(Event::Said, "Hello") { |self| self.reply("Hello World") }
+```
+```
+quod logos heus responsio salve
+```
 
