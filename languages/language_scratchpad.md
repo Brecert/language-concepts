@@ -1,3 +1,4 @@
+```
 puts | say | log
 print | whisper
 
@@ -31,7 +32,7 @@ class While < Loop
     !.start
   end
 end
-
+```
 ```rb
 method(say)
   "{{say ~if(~.object?).&(not(~.nil?)).do(~.to_s) }}"
