@@ -1,17 +1,24 @@
 class Message <-
-  property @content := String
-  ~init <- (@content)
+  property @content   : String
+  property @username  : String
+  ~init <- (@username, @content)
+  
+element Message <-
+  property @message : Message
+  ~draw <-
+    message_area <- draw box
+      from (x: 15%, y: 0%) to (x: 100%, y: 100%)
+      text (@message.content)
+    username <- draw box
+      from (x: 0%, y:0%) to (x: 15%, y: 100%)
+      rounded (100%)
+      text (@message.username)
 
-element MessageArray <-
-  property @messages := Array(Message)
-  ~render <-
-    
+@messages : Array(Message)
 
-
-messages := Element(MessageArray)
-
-input_container := Element(Div)
-message_input := Element(Textarea)
+messages_container : Element(Li)
+input_container : Element(Div)
+message_input : Element(Textarea)
 
 input_container <- draw box
   size (x: 100%, y: 32px)
@@ -21,4 +28,10 @@ message_input <- draw box in input_container
   rounded (100%)
   size (x: 100%, y: 32px)
   at center
+  
+messages_container <- draw box
+  size (x: 100%, y: 100% - 32px)
+  at center
+  
+  
   
