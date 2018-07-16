@@ -1,15 +1,17 @@
 class Message <-
-  @content : String
+  property @content := String
   ~init <- (@content)
 
 element MessageArray <-
-  ~init <-
-    @array = [] of Message
+  property @messages := Array(Message)
+  ~render <-
+    
 
-messages @= Element(Array(
 
-message_input_container @= Element(Div)
-message_input @= Element(Textarea)
+messages := Element(MessageArray)
+
+input_container := Element(Div)
+message_input := Element(Textarea)
 
 input_container <- draw box
   size (x: 100%, y: 32px)
@@ -20,4 +22,3 @@ message_input <- draw box in input_container
   size (x: 100%, y: 32px)
   at center
   
-messages <- 
