@@ -1,7 +1,10 @@
 # The "Language" stuff.
 > This is just the basics of the language
+
 > It's not complicated and is meant to be kind of uselss on its own
+
 > If you want a real language use a real language.
+
 > The real part of the language is the html portion of it, all of this is fluff and the actual language could function without most of this.
 ## variable
 ```
