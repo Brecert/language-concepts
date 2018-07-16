@@ -3,35 +3,47 @@ class Message <-
   property @username  : String
   ~init <- (@username, @content)
   
-element Message <-
+element message <-
   property @message : Message
   ~draw <-
-    message_area <- draw box
+    message_area <- draw div
       from (x: 15%, y: 0%) to (x: 100%, y: 100%)
       text (@message.content)
-    username <- draw box
+    username <- draw div
       from (x: 0%, y:0%) to (x: 15%, y: 100%)
       rounded (100%)
       text (@message.username)
 
-@messages : Array(Message)
+`draw is absolute`
+`append is relative`
 
-messages_container : Element(Li)
-input_container : Element(Div)
-message_input : Element(Textarea)
-
-input_container <- draw box
+input_container <- draw div
   size (x: 100%, y: 32px)
   at (x: 0, y: 100%)
 
-message_input <- draw box in input_container
+message_input <- draw div in input_container
   rounded (100%)
   size (x: 100%, y: 32px)
   at center
   
-messages_container <- draw box
+message_list <- draw div
   size (x: 100%, y: 100% - 32px)
-  at center
+  at (0, 0)
+
+add_message <- (message : Message) ->
+  message_container <- append div in message_list
+    size(x: 100%, y: 32px)
+  messages <- draw message in message_container
+  
+```js
+// Inline JS like this
+// Methods carry over since they are translated to js (or WebAssembly)
+// Psuedocode
+addListener("new message", (message) => {
+  add_message(message)
+})
+```
+  
   
   
   
