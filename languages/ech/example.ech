@@ -21,8 +21,8 @@ input_container <- draw div
   size (x: 100%, y: 32px)
   at (x: 0, y: 100%)
 
-message_input <- draw div in input_container
-  rounded (100%)
+message_input <- draw textarea in input_container
+  rounded (100px)
   size (x: 100%, y: 32px)
   at center
   
