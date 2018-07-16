@@ -54,5 +54,6 @@ String <- (Class) ->
   ~init <- (string : String) ->
     @string : Array(Char)
     @string <- string
+    return self
 ```
   
