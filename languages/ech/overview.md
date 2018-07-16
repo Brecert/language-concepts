@@ -8,7 +8,7 @@
 > The real part of the language is the html portion of it, all of this is fluff and the actual language could function without most of this.
 
 ## variable
-```
+```hs
 project_name : String
 project_name <- "ech-lang"
 projects : Array(String)
