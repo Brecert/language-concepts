@@ -18,13 +18,18 @@ element message <-
 `append is relative`
 
 input_container <- draw div
-  size (x: 100%, y: 32px)
-  at (x: 0, y: 100%)
+  rounded (2px)
+  padding (10px)
+  size (x: (100% - 10px), y: 32px)
+  at (x: center, y: 100% - 10px)
 
-message_input <- draw textarea in input_container
-  rounded (100px)
+`Automatically resets textarea and other elements to not have a border and to be a clean slate.`
+
+message_input <- append textarea in input_container
+  inherit background
   size (x: 100%, y: 32px)
   at center
+  style { resize: none; }
   
 message_list <- draw div
   size (x: 100%, y: 100% - 32px)
