@@ -42,8 +42,10 @@ add(numbers, foods) `[10, 20, 30, 40, "sushi", "pasta", "steak"] : Array(Number 
   
 ## normal, global, private, const can be used on functions/methods
 ### private add method
+```
 ~add <- (number1, number2) ->
   return number1 + number2
+ ```
   
 ## class
 ### uses private methods for special methods like init
