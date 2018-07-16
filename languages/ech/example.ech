@@ -1,0 +1,23 @@
+class Message <-
+  @content : String
+  ~init <- (@content)
+
+element MessageArray <-
+  ~init <-
+    @array = [] of Message
+
+messages @= Element(Array(
+
+message_input_container @= Element(Div)
+message_input @= Element(Textarea)
+
+input_container <- draw box
+  size (x: 100%, y: 32px)
+  at (x: 0, y: 100%)
+
+message_input <- draw box in input_container
+  rounded (100%)
+  size (x: 100%, y: 32px)
+  at center
+  
+messages <- 
