@@ -1,4 +1,4 @@
-```
+```cr
 » Spell
   » Damaging
     | Undead
