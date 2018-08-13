@@ -28,3 +28,27 @@
   » Effect
     | @ Effect::Negative::Ambiant
 ```
+
+
+## Spark Wand
+### formatting
+```
+@NAME Spark Wand
+@DESCRIPTION Launch magic sparks.
+Projectile::Snowball
+  | Speed::Medium
+  | Area::Medium
+    | Damage::Type::Enemy
+      | Damage::Amount::Low
+```
+
+### no formatting
+```
+@NAME Spark Wand
+@Description
+Projectile::Snowball
+Speed::Medium
+Area::Medium
+Damage::Type::Enemy
+Damage::Amount::Low
+```
