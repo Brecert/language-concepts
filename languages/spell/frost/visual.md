@@ -1,6 +1,6 @@
 ## Spark Wand Example
 ### formatting
-```ex
+```sh
 @NAME Spark Wand
 @DESCRIPTION Launch magic sparks.
 Projectile::Snowball
@@ -11,9 +11,9 @@ Projectile::Snowball
 ```
 
 ### no formatting
-```ex
+```sh
 @NAME Spark Wand
-@Description
+@Description Launch magic sparks.
 Projectile::Snowball
 Speed::Medium
 Area::Medium
