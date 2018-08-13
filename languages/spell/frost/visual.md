@@ -32,7 +32,7 @@
 
 ## Spark Wand
 ### formatting
-```
+```ex
 @NAME Spark Wand
 @DESCRIPTION Launch magic sparks.
 Projectile::Snowball
@@ -43,7 +43,7 @@ Projectile::Snowball
 ```
 
 ### no formatting
-```
+```ex
 @NAME Spark Wand
 @Description
 Projectile::Snowball
