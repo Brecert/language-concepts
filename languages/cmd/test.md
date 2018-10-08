@@ -17,13 +17,13 @@ Output
 
 ```cr
 # main.mcfunction
-execute as @a run function example:execute_as_s_1
+execute as @a run function example:as/a/1
 
 # reset.mcfunction
 scoreboard objectives add constant dummy
 scoreboard players set x constant 10
 
-# execute_as_s_1.mcfunction
+# as/a/1.mcfunction
 tellraw @s run tellraw @s ["ten is ",{"score":{"name":"@s","objective":"raycastCount"}}]
 ```
 
