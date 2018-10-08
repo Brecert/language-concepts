@@ -15,7 +15,7 @@ module Example
   const TEN = 10 #=> scoreboard players set x constant 10
 
   as @a do
-    tellraw "ten is #{TEN}" #=> tellraw @s ["ten is ",{"score":{"name":"@s","objective":"TEN"}}]
+    tellraw "ten is #{TEN}" #=> tellraw @s ["ten is ",{"score":{"name":"TEN","objective":"constant"}}]
   end
 end
 ```
@@ -33,6 +33,6 @@ scoreboard objectives add constant dummy
 scoreboard players set x constant 10
 
 # as/a/1.mcfunction
-tellraw @s run tellraw @s ["ten is ",{"score":{"name":"@s","objective":"raycastCount"}}]
+tellraw @s run tellraw @s ["ten is ",{"score":{"name":"TEN","objective":"constant"}}]
 ```
 
