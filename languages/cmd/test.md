@@ -1,3 +1,11 @@
+### Test
+```cr
+module right_click
+  const 
+end
+```
+
+
 ### Constants
 
 Input
@@ -7,7 +15,7 @@ module Example
   const TEN = 10 #=> scoreboard players set x constant 10
 
   as @a do
-    tellraw "ten is #{TEN}" #=> tellraw @s ["ten is ",{"score":{"name":"@s","objective":"raycastCount"}}]
+    tellraw "ten is #{TEN}" #=> tellraw @s ["ten is ",{"score":{"name":"@s","objective":"TEN"}}]
   end
 end
 ```
