@@ -1,10 +1,24 @@
 ### Test
+
 ```cr
-module right_click
-  const 
+module RightClick
+  clicked = path("minecraft.used:minecraft.carrot_on_a_stick")
+  
+  def on_click
+    say "pew pew"
+  end
+  
+  as @a do
+    if clicked >= 1
+      # function path("rightclick:on_click")
+      on_click
+    end
+  end
+  
+  clicked = 0
 end
 ```
-
+<br>
 
 ### Constants
 
