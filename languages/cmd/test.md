@@ -11,6 +11,8 @@ module Example
 end
 ```
 
+<br>
+
 Output
 
 ```cr
