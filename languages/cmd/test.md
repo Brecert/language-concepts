@@ -1,7 +1,7 @@
 ### Test
 
 ```cr
-module RightClick
+module Click
   clicked = path("minecraft.used:minecraft.carrot_on_a_stick")
   
   def on_click
@@ -10,14 +10,34 @@ module RightClick
   
   as @a do
     if clicked >= 1
-      # function path("rightclick:on_click")
+      # function path("click:on_click")
       on_click
     end
+    
+    clicked = 0
   end
-  
-  clicked = 0
 end
 ```
+<br>
+
+Output
+
+```mcfunction
+# main.mcfunction
+execute as @a run function rightclick:as/a/1
+
+# reset.mcfunction
+scoreboard objectives remove clicked minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add clicked minecraft.used:minecraft.carrot_on_a_stick
+
+# on_click.mcfunction
+say pew pew
+
+# as/a/1.mcfunction
+execute if score @s clicked matches 1.. run function click:on_click
+scoreboard players set @s clicked 0
+```
+
 <br>
 
 ### Constants
