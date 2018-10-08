@@ -15,7 +15,7 @@ end
 
 Output
 
-```cr
+```mcfunction
 # main.mcfunction
 execute as @a run function example:as/a/1
 
