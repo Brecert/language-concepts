@@ -1,17 +1,18 @@
-## Uniform
-```py
-def add(one, two):
-  return one + two
+`[0-9]+`
+Number
+| value
+| kind
 
-x = "Hello World!"
-print(x)
-```
+`'\'' \S '\''`
+Char
+| value
 
-```
-a1 = Arg("one", :none)
-a2 = Arg("two", :none)
-r1 = Return(Variable("one"), Call("+"), Variable("two"))
-e1 = ExpressionList(r1)
-b1 = Block(e1)
-Call("add", a1, a2, b1)
-```
+`'[' elements ']' "of" kind`
+List
+| elements
+| kind
+
+`\w\S*`
+Var
+| name
+
